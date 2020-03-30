@@ -29,7 +29,7 @@ import { TLang } from './typings';
   },
 })
 export default class App extends Vue {
-  languages: TLang[] = ['RU', 'ENG'];
+  private languages: TLang[] = ['RU', 'ENG'];
   get appLang() {
     return this.$store.getters.getLang;
   }
